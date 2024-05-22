@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Service plan and Date Time -->
+    <TextView
+        android:id="@+id/servicePlanTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/service_plan"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/dateTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_time"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray" />
+
+</LinearLayout>

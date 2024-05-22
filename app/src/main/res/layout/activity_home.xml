@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Material ToolBar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <!-- GPS current location -->
+    <TextView
+        android:id="@+id/currentLocationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:text="@string/current_location" />
+
+    <!-- Full-width search bar -->
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentLocationTextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/search_services_hint"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="8dp"
+        android:background="@drawable/search_bar_background" />
+
+    <!-- Add a RecyclerView to display home services in a grid format -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewServices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchEditText"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <!-- FloatingActionButton for chat -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/chatFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_chat"
+        app:backgroundTint="@color/colorPrimary"
+        app:elevation="6dp" />
+
+    <!-- Need help text -->
+    <TextView
+        android:id="@+id/needHelpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="70dp"
+        android:layout_alignEnd="@id/chatFab"
+        android:text="@string/need_help_message"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:visibility="gone" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        app:menu="@menu/bottom_navigation_menu" />
+
+    <!-- Fragment container to load fragments -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation" />
+
+</RelativeLayout>

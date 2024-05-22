@@ -1,0 +1,67 @@
+<resources>
+    <!-- App name -->
+    <string name="app_name">Giinie</string>
+
+    <!-- Strings used in titles -->
+    <string name="cart_title">Cart</string>
+    <string name="chatbot_title">Giinie ChatBot</string>
+    <string name="login_title">Login</string>
+    <string name="settings_title">Settings</string>
+    <string name="customer_info_title">Customer Information</string>
+    <string name="payment_method_title">Payment Method</string>
+    <string name="review_rating_title">Review and Ratings</string>
+
+    <!-- Strings used in buttons -->
+    <string name="proceed_to_payment_button">Proceed to Payment</string>
+    <string name="send_button">Send Button</string>
+    <string name="login_button">Login</string>
+    <string name="logout_button">Logout</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="save_settings_button">Save Settings</string>
+    <string name="add_review_button">Add a Review</string>
+    <string name="go_to_home_button">Go to Home</string>
+    <string name="pay_button">Pay</string>
+    <string name="upload_photo_button">Upload Photo</string>
+    <string name="submit_review_button">Submit Review</string>
+    <string name="select_datetime_button">Select Date and Time</string>
+    <string name="add_to_cart_button">Add to Cart</string>
+    <string name="skip_button">Skip</string>
+
+    <!-- Strings used in radiobuttons -->
+    <string name="current_location_radiobutton">Use Current Location</string>
+    <string name="manual_location_radiobutton">Enter location manually</string>
+    <string name="credit_card_radiobutton">Credit Card</string>
+    <string name="debit_card_radiobutton">Debit Card</string>
+
+    <!-- Strings used in hints -->
+    <string name="search_services_hint">Search for services</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="name_hint">Name</string>
+    <string name="phone_hint">Phone Number</string>
+    <string name="address_hint">Address</string>
+    <string name="card_number_hint">Card Number</string>
+    <string name="expiry_date_hint">Expiry Date (MM/YY)</string>
+    <string name="cvv_hint">CVV</string>
+    <string name="enter_feedback_hint">Enter your feedback...</string>
+    <string name="enter_comments_hint">Enter your comments...</string>
+
+    <!-- Other Strings -->
+    <string name="cart_message_without_login">Please login to see cart items</string>
+    <string name="query_input">Enter your query</string>
+    <string name="current_location">Current Location: N/A</string>
+    <string name="need_help_message">Need help? I can assist!</string>
+    <string name="receive_notifications">Receive Notifications</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="signup_message">Don\'t have an account? Sign up here</string>
+    <string name="no_orders_message">No orders available</string>
+    <string name="service_plan">Service Plan</string>
+    <string name="service_name">Service Name</string>
+    <string name="date_time">Date and Time</string>
+    <string name="cart_fragment">Cart Fragment</string>
+    <string name="settings_fragment">Settings Fragment</string>
+    <string name="total_amount">Total Amount: $0.00</string>
+    <string name="google_android_client_id">205612174851-nd64thblgeh9hgjma4ftg33l7lc6338g.apps.googleusercontent.com</string>
+
+
+</resources>

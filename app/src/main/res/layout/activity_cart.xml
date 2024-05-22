@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Material ToolBar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <!-- Cart title -->
+    <TextView
+        android:id="@+id/cartTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_title"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- TextView for displaying "Please login to see cart items" -->
+    <TextView
+        android:id="@+id/noCartItemsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_message_without_login"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <!-- RecyclerView to display cart items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCartItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cartTitleTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:visibility="visible" />
+
+    <!-- Button to proceed to payment -->
+    <Button
+        android:id="@+id/proceedToPaymentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:text="@string/proceed_to_payment_button" />
+
+</RelativeLayout>

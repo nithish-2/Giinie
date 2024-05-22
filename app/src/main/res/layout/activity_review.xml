@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Material ToolBar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <!-- Review and Ratings -->
+    <TextView
+        android:id="@+id/ReviewTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/review_rating_title"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="100dp"
+        android:layout_centerHorizontal="true" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:numStars="5"
+        android:rating="0" />
+
+    <!-- Larger EditText for entering comments -->
+    <EditText
+        android:id="@+id/reviewsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:hint="@string/enter_feedback_hint"
+        android:inputType="textMultiLine" />
+
+    <!-- Button to upload a photo within the comments section -->
+    <Button
+        android:id="@+id/uploadPhotoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_photo_button" />
+
+    <!-- ImageView to display the uploaded photo -->
+    <ImageView
+        android:id="@+id/capturedImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone" />
+
+    <!-- Button to add the service to the cart -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="@string/submit_review_button" />
+
+</LinearLayout>

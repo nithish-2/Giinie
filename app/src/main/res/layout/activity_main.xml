@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- App video -->
+    <VideoView
+        android:id="@+id/backgroundVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="centerCrop" />
+
+    <!-- Login and Skip button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/app_logo" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/login_button"
+            android:backgroundTint="@color/white"
+            android:textColor="@android:color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/skipButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/skip_button"
+            android:backgroundTint="@color/white"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+</RelativeLayout>

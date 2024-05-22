@@ -1,0 +1,9 @@
+<resources>
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <!-- Define your style attributes here -->
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Other theme attributes -->
+    </style>
+
+</resources>

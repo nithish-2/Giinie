@@ -1,0 +1,12 @@
+<!-- ic_home.xml -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="@android:color/white">
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M12,3L2,12L3.41,13.41L12,5.83L20.59,13.41L22,12L12,3zM12,8.25V19H16V14H19V12H5V14H8V19H12V8.25zM13,19H11V16H13V19z" />
+</vector>
